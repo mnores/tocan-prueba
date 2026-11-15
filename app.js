@@ -444,7 +444,7 @@ function resultados() {
 }
 function vistaArtistas() {
   const top = `<div class="top"><div class="tit"><h2>Artistas</h2></div>${yoBtn()}</div>`;
-  const sumar = `<div class="sumar"><button class="btn suave" data-act="no-esta">Importar de Spotify</button><button class="btn suave" data-act="proponer">Proponer un artista</button></div>`;
+  const sumar = `<div class="sumar"><button class="btn suave" data-act="proponer">Proponer un artista</button></div>`;
   if (S.q.trim()) return `${top}${buscador()}${resultados()}`;
   const l = listaSeguidos();
   if (!l.length) return `${top}${buscador()}<div class="sec"><div class="vacio"><b>Todavía no seguís a nadie.</b>Buscá a tus artistas y te avisamos cuando anuncien una fecha cerca tuyo.</div></div>`;
